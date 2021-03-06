@@ -69,16 +69,19 @@ nav {
     padding: 13px 70px;
     margin: 0;
     list-style: none;
-    .menu_link {
+    &_link {
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
         color: #FFFFFF;
     }
-    .menu_item {
+    &_item {
         border-right: 2px dotted black;
         padding-right: 28px;
+        &:last-child {
+            border-right: none;
+        }
     }
 }
 
@@ -548,6 +551,17 @@ header {
             img {
                 max-width: 90px;
             }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .menu {
+        &_item {
+            padding-right: 20px;
+        }
+        &_link {
+            font-size: 13px;
         }
     }
 }

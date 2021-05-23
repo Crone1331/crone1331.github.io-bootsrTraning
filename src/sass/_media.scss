@@ -174,23 +174,28 @@
         }
     }
     .subheader_phone {
+        text-align: center;
         font-size: 13px;
         margin-top: 10px;
     }
     .subheader_btn {
         margin-top: 5px;
-        margin-left: 20px;
+        margin-left: 20%;
         width: 110px;
     }
     .footer_cont {
-        grid-template-columns: 70px 1fr 90px;
+        // grid-template-columns: 40px 1fr 90px;
+        display: flex;
+        flex-direction: column;
         img {
-            width: 80px;
+            width: 60px;
         }
     }
     .footer .social_icons {
-        width: 70px;
-        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        flex-direction: row;
         justify-content: space-evenly;
         margin-left: 0;
     }
@@ -198,6 +203,8 @@
         width: 230px;
     }
     .footer .store_footer {
+        flex-direction: row;
+        margin-bottom: 20px;
         justify-content: space-evenly;
         padding-right: 0;
     }

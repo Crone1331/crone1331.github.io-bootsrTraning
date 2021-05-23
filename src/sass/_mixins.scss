@@ -1,0 +1,47 @@
+@mixin social_item_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+@mixin style_block {
+    min-height: 898px;
+    background: url('../../img/Group 1.png') center center/cover no-repeat;
+    padding: 54px 0 135px 0;
+    .advantages_3 {
+        background: #FFFFFF;
+        color: #070716;
+    }
+    .causes_header_text_3 {
+        color: #FFFFFF;
+        padding-bottom: 0;
+    }
+    .subtitle_3 {
+        color: #FFFFFF;
+    }
+    img {
+        width: 100%;
+        max-width: 759px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    &_sub_text {
+        text-align: center;
+        color: #222222;
+        font-style: normal;
+        font-weight: 300;
+    }
+}
+
+@mixin btn_hover {
+    &:hover {
+        background: none;
+        background-color: $main-color;
+    }
+}

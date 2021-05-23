@@ -1,0 +1,198 @@
+@media (max-width:1200px) {
+    .menu {
+        &_item {
+            padding-right: 20px;
+        }
+        &_link {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 30px;
+        }
+        &_subheader {
+            font-size: 30px;
+        }
+    }
+    .mobile {
+        .mobile_item {
+            width: 280px;
+        }
+    }
+    .footer_cont .nav_footer_middle_text a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:992px) {
+    .menu {
+        padding: 13px 40px;
+        &_link {
+            font-size: 12px;
+        }
+        &_item {
+            padding-right: 6px;
+        }
+    }
+    .subheader {
+        &_phone {
+            font-size: 20px;
+        }
+    }
+    .causes_item {
+        align-items: flex-start;
+    }
+    .mobile {
+        min-height: 760px;
+    }
+    .mobile .mobile_item {
+        width: 220px;
+        height: 200px;
+    }
+    .mobile .mobile_item_subtitle {
+        font-size: 16px;
+    }
+    .mobile .mobile_item_plus {
+        bottom: 15px;
+    }
+    .footer_cont .nav_footer_top_text a {
+        margin: 0 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .footer_cont .nav_footer_middle_text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer_cont {
+        min-height: 190px;
+        .nav_footer {
+            padding: 30px 0 30px 0;
+        }
+        .nav_footer_middle_text a {
+            margin-top: 5px;
+        }
+        .nav_footer_top_text {
+            padding-bottom: 0;
+        }
+    }
+    .footer .store_footer {
+        min-width: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin-top: 20px;
+        }
+    }
+    .city {
+        min-height: 600px;
+    }
+}
+
+@media (max-width:767px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: .8s;
+        &_active {
+            left: 0;
+        }
+        &_item {
+            padding-right: 0;
+            border: none;
+        }
+        &_link {
+            font-size: 20px;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 4px;
+            transition: .5s;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    .subheader_call {
+        text-align: right;
+    }
+    .subheader_phone {
+        display: block;
+        text-align: right;
+    }
+    .xs-hidden {
+        display: none;
+    }
+    .xs-visible {
+        display: block;
+    }
+    .subheader_btn {
+        margin-top: 0;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width:425px) {
+    .subheader {
+        &_img {
+            width: 220px;
+        }
+    }
+    .subheader_btn {
+        margin-left: 20px;
+    }
+    .footer_cont {
+        grid-template-columns: 70px 1fr 90px;
+        img {
+            width: 80px;
+        }
+    }
+    .footer .social_icons {
+        width: 70px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+    .footer_cont .nav_footer:before {
+        width: 230px;
+    }
+    .footer .store_footer {
+        justify-content: space-evenly;
+        padding-right: 0;
+    }
+    .footer_cont .nav_footer_top_text a {
+        font-size: 11px;
+    }
+}

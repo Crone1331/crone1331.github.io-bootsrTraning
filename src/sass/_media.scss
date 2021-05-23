@@ -165,13 +165,22 @@
 }
 
 @media (max-width:425px) {
+    .causes_header_text {
+        font-size: 25px;
+    }
     .subheader {
         &_img {
-            width: 220px;
+            width: 150px;
         }
     }
+    .subheader_phone {
+        font-size: 13px;
+        margin-top: 10px;
+    }
     .subheader_btn {
+        margin-top: 5px;
         margin-left: 20px;
+        width: 110px;
     }
     .footer_cont {
         grid-template-columns: 70px 1fr 90px;
